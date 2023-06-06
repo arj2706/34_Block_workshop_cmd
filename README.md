@@ -9,5 +9,5 @@ Run the front end in the project directory where the react front end file is pla
 # Backend
 Start the back end where you have setup the backend server here we use Express js
 
-&nbsp; node server.js
+&nbsp; <b>node server.js</b>
 &nbsp; server.js is the file nanme where the backend server is configured
