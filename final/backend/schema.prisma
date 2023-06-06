@@ -1,0 +1,48 @@
+// This specifies the generator settings for Prisma
+generator client {
+  // "provider" refers to the Prisma client that we want to use, 
+  // in this case, it's the Javascript client.
+  provider = "prisma-client-js"
+}
+
+// Datasource settings, this defines the database connection.
+datasource db {
+  // "provider" specifies the type of database to connect to, 
+  provider = "postgresql"
+  
+  // "url" contains the connection string to the database, 
+  // formatted as "protocol://username:password@host:port/database_name".
+  // This connection string indicates that we're connecting to a PostgreSQL database on localhost (this machine),
+  // port number 5432, the database name is 'users', 
+  // and the username and password to connect are 'postgres' and '2706' respectively.
+  url      = "postgresql://postgres:2706@localhost:5432/users"
+}
+
+// Model for the User, models in Prisma define the structure of your data for Prisma Client
+model User {
+  // This field is the primary key (id), it's an integer 
+  // and it auto increments with each new user.
+  id       Int      @id @default(autoincrement())
+  
+  // the @unique directive ensures that no two users can have the same username.
+  username String   @unique
+  
+  // This field is for the user's password.
+  password String
+}
+
+// Model for the Student, similar to the User model
+model Student {
+  // This field is the primary key (id), it's an integer and 
+  // it auto increments with each new student.
+  id    Int    @id @default(autoincrement())
+  
+  // This field is for the name of the student.
+  name  String
+  
+  // This field is for the age of the student.
+  age   Int
+  
+  // This field is for the grade of the student.
+  grade String
+}
