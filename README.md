@@ -1,13 +1,32 @@
-# 34_Block_workshop_cmd
+# 🎓 Student Hub 🎓
 
-# Front end 
-Run the front end in the project directory where the react front end file is placed.
+Student Hub is an application for administrators to manage student data effectively. It includes user authentication, CRUD operations for student data, Prisma integration, and a React-based frontend.
 
-&nbsp; <b>npm start</b> 
-&nbsp; this loads the front end 
+## 📂 Project Structure
 
-# Backend
-Start the back end where you have setup the backend server here we use Express js
+Here's the main structure of the project:
 
-&nbsp; <b>node server.js</b>
-&nbsp; server.js is the file nanme where the backend server is configured
+```bash
+/student-hub
+|-- /client
+|   |-- /src
+|   |   |-- /components
+|   |   |-- /pages
+|   |   |-- /api
+|   |   |-- App.js
+|   |   |-- index.js
+|-- /server
+|   |-- /src
+|   |   |-- /models
+|   |   |-- /routes
+|   |   |-- /controllers
+|   |   |-- /middlewares
+|   |-- .env
+|   |-- server.js
+
+# 💻 Dependencies
+Client-Side
+React.js
+Redux Toolkit
+Redux Toolkit Query
+React-Router
