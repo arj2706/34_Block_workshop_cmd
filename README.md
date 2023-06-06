@@ -45,17 +45,24 @@ dotenv
 ```bash
 npm install express prisma jsonwebtoken bcrypt dotenv cors
 
-# 🚀 Getting Started
-After cloning the repository:
+## 🚀 Getting Started
 
-Server Setup
+After cloning the repository, follow these steps to set up the server:
 
-Navigate to the server directory and run npm install to install server dependencies.
-Create a .env file in the server directory to store your environment variables, such as your JWT Secret and database credentials.
-Run npx prisma migrate dev to run database migrations.
-Run npx prisma db seed to seed the database with initial data.
-Start the server by running npm start in front end and backend server by node server.js
-Client Setup
+1. **Server Setup**
+   - Navigate to the `server` directory: `cd server`.
+   - Install server dependencies: `npm install`.
+   - Create a `.env` file in the `server` directory to store your environment variables, such as your JWT Secret and database credentials.
+   - Run database migrations: `npx prisma migrate dev`.
+   - Seed the database with initial data: `npx prisma db seed`.
+   - Start the Front end: `npm start` and backend by node server.js.
 
-Navigate to the client directory in a new terminal and run npm install to install client dependencies.
-Start the client by running npm start
+2. **Client Setup**
+   - Navigate to the `client` directory in a new terminal: `cd client`.
+   - Install client dependencies: `npm install`.
+   - Start the client: `npm start`.
+
+The application should now be running locally. Enjoy exploring Student Hub!
+
+Feel free to adjust the formatting or add additional details as needed for your specific project.
+
