@@ -3,7 +3,7 @@
 # Front end 
 Run the front end in the project directory where the react front end file is placed.
 
-&nbsp; npm start 
+&nbsp; <b>npm start</b> 
 &nbsp; this loads the front end 
 
 # Backend
